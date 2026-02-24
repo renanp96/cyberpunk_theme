@@ -11,7 +11,8 @@ config.front_end = "WebGpu"
 -- FONTE
 -- =====================
 config.font = wezterm.font_with_fallback({
-  "JetBrains Mono",
+  "JetBrainsMono Nerd Font",
+  "JetBrainsMono Nerd Font Mono",
   "Noto Color Emoji"
 })
 config.font_size = 13.0
