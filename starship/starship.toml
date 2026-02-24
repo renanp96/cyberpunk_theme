@@ -1,17 +1,26 @@
-format = "$directory$git_branch$character"
+add_newline = false
+
+format = """
+[](#ff00ff)\
+$username\
+[](bg:#00ffff fg:#ff00ff)\
+$directory\
+[](fg:#00ffff bg:#00ff99)\
+$git_branch\
+[](fg:#00ff99)\
+$character
+"""
+
+[username]
+style_user = "bg:#ff00ff fg:#000000 bold"
+show_always = true
 
 [directory]
-style = "bold #00f7ff"
-
-[java]
-style = "bold #39ff14"
+style = "bg:#00ffff fg:#000000 bold"
 
 [git_branch]
-style = "bold #ff2e97"
-
-[git_status]
-style = "bold #ff2e97"
+style = "bg:#00ff99 fg:#000000 bold"
 
 [character]
-success_symbol = "[➜](bold #9d4edd)"
-error_symbol = "[➜](bold red)"
+success_symbol = "[➜](bold #ff00ff)"
+error_symbol = "[➜](bold #ff0000)"
